@@ -1,0 +1,195 @@
+.reward-fund {
+   background: linear-gradient(180deg, #455FE5 0.01%, #8091FF 100%)
+}
+
+
+
+.reward-fund__body {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-auto-rows: minmax(200px, 300px);
+   align-items: start;
+}
+
+.reward-fund__block-smiley {
+   max-width: 312px;
+   max-height: 685px;
+   min-width: 250px;
+   align-self: right;
+
+   position: relative;
+   z-index: 1;
+
+   &-coins {
+      position: absolute;
+      top: 0;
+      right: -16%;
+      z-index: -1;
+   }
+}
+
+.reward-fund__block-smiley-coins-front {
+   position: absolute;
+   bottom: 35%;
+   left: -40px;
+}
+.reward-fund__block-smiley-coins-back {
+   position: absolute;
+   bottom: 18%;
+   right: 0;
+}
+
+.reward-fund__block-number {
+   align-self: center;
+   &-title {
+      @extend %h2;
+      margin-bottom: 32px;
+      color: #fff;
+   }
+
+   &-wrapper {
+      display: flex;
+      margin: 32px 0 64px 0;
+   }
+
+   &-item {
+      display: flex;
+      flex-direction: column;
+
+      & + & {
+         margin-left: 80px;
+      }
+   }
+
+   &-span-one {
+      font-size: 20px;
+      color:#fff;
+      opacity: 0.5;
+   }
+
+   &-span-two {
+      font-size: 15px;
+      margin-left: 10px;
+   }
+
+   &-span-three {
+      font-size: 14px;
+      color:#fff;
+      opacity: 0.5;
+   }
+
+   &-item-title{
+      @extend %h2;
+      margin: 14px 0;
+      color:#fff;
+   }
+}
+
+.reward-fund__block-text {
+   grid-column-start: 2;
+   grid-row-start: 2;
+
+   &-line {
+      height: 2px;
+      width: 42px;
+      background-color: #fff;
+   }
+
+   &-title {
+      margin: 24px 0 32px 0;
+      @extend %h4;
+      color: #fff;
+   }
+
+   &-text {
+      @extend %h5;
+      color: #fff;
+   }
+}
+
+@media screen and (max-width: 768.9px) {
+   .reward-fund__body {
+      grid-auto-rows: auto;
+   }
+   .reward-fund__block-text {
+      grid-column-start: 1;
+      grid-column-end: 3;
+
+      grid-row-start: 3;
+   }
+
+   .reward-fund__block-number {
+      justify-self: center;
+   }
+
+   .reward-fund__block-number-wrapper {
+      flex-direction: column;
+   }
+
+   .reward-fund__block-number-item + .reward-fund__block-number-item {
+      margin-top: 30px;
+      margin-left: 0;
+   }
+
+   .reward-fund__block-smiley-coins {
+      top: -8%;
+   }
+}
+
+@media screen and (max-width: 630.9px) {
+   .reward-fund__block-number {
+      justify-self: end;
+   }
+
+   
+}
+
+@media screen and (max-width: 540.9px) {
+   .reward-fund__block-smiley {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+
+      justify-self: center;
+   }
+
+   .container-max-modification {
+      overflow: hidden;
+   }
+
+   .reward-fund__block-smiley-coins {
+      top: -11%;
+      right: -76px;
+      width: 150px;
+   }
+
+   .reward-fund__block-smiley-coins-front {
+      width: 120px;
+   }
+
+   .reward-fund__block-smiley-coins-back {
+      width: 70px;
+   }
+
+   .reward-fund__block-number {
+      grid-column-start: 1;
+      grid-column-end: 3;
+
+      grid-row-start: 2;
+      justify-self: center;
+   }
+   .reward-fund__block-number-item {
+      text-align: center;
+   }
+
+   .reward-fund__block-smiley {
+      min-width: 200px;
+   }
+
+}
+
+
+
+
+
+

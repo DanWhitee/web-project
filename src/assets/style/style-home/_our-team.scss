@@ -1,0 +1,180 @@
+.our-team {
+   padding-top: 100px;
+   background: linear-gradient(180deg, #4A65F5 0%, #4356CE 50.52%, #5365D9 100%);
+
+   &__wrapper {
+      background: url('../../images/home-images/our-team-images/our-team-images-smiley.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+   } 
+
+   &__title{
+      @extend %h1;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      padding: 24px 0;
+
+      background-image: url('../../images/home-images/our-team-images/our-team-images-background-text.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+   }
+
+   &__body {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(292px, 1fr));
+      grid-gap: 24px;
+
+      margin-top:  64px;
+      border: 1px solid #FFFFFF;
+      border-radius: 25px;
+      padding: 24px 27px 24px 27px;
+
+      @media screen and (max-width: 768.9px) {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media screen and (max-width: 420.9px) {
+         padding: 15px 20px 20px 15px;
+      }
+   }
+
+   &__item {
+      border-radius: 20px;
+      background-color: #fff;
+      padding: 14px 14px 24px 14px;
+      min-height: 259px;
+   }
+
+   &__img {
+      border-radius: 20px;
+      & img {
+         width: 100%;
+      }
+   }
+
+   &__text {
+      margin-top: 24px;
+      text-align: center;
+
+      & h5 {
+         @extend %h5;
+         margin-bottom: 5px;
+      }
+
+      & p {
+         @extend %caps-medium;
+      }
+   }
+}
+
+.media {
+   margin-top: 100px;
+
+   &__title {
+      @extend %h1;
+      margin-bottom: 100px;
+      text-align: center;
+   }
+
+   &__body {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 24px;
+
+      @media screen and (max-width: 768.9px) {
+         grid-template-columns: repeat(1, 1fr);
+         grid-template-rows: repeat(6, 290px);
+         grid-gap: 18px;
+      }
+
+      @media screen and (max-width: 396.9px) {
+         grid-template-rows: repeat(6, 350px);
+      }
+   }
+
+
+   &__item-text{
+      border-radius: 20px;
+      padding: 32px;
+      background-color: #fff;
+
+      &-text {
+         @extend %h4;
+         margin: 32px 0 24px 0;
+      }
+   }
+
+   &__item-line {
+      display: flex;
+      align-items: center;
+   }
+
+   &__span {
+      margin-left: 14px;
+      color: #000;
+      font-size: 20px;
+      font-weight: 700;
+   }
+
+   &__line {
+      height: 1px;
+      background-color: #343837;
+      width: 100%;
+   } 
+
+   &__btn {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 32px;
+   }
+
+   &__btn-bnt {
+      @extend %btn-gray-big
+   }
+}
+
+
+.media__item-video {
+   padding: 32px;
+   border-radius: 20px;
+   background-image: url('../../images/home-images/our-team-images/media-sity.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   overflow: hidden;
+
+   &-title {
+      @extend %h5;
+   }
+
+   &-line {
+      margin-top: 5px;
+      display: flex;
+      align-items: center;
+   }
+
+   &-img {
+      margin-left: 14px;
+   }
+
+   &-hr {
+      height: 1px;
+      background-color: #343837;
+      width: 100%;
+   }
+
+   &-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 24px 32px;
+      background-color: #fff;
+   }
+}

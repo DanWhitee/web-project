@@ -1,0 +1,54 @@
+.not-nft-picture {
+   padding-top: 64px;
+   background: linear-gradient(360deg, #4A65F5 0%, #4356CE 50.52%, #5365D9 100%);
+
+   &__title {
+      text-align: center;
+      @extend %h2;
+      color: #fff;
+   }
+
+   &__body {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(292px, 1fr));
+      grid-gap: 24px;
+      margin-top: 64px;
+   }
+
+   &__item {
+      max-height: 293px;
+      padding: 24px;
+      border: 1px solid #FFFFFF;
+      border-radius: 15px;
+
+      @media screen and (max-width: 420.9px) {
+         padding: 18px;
+      } 
+
+      &:nth-child(3),&:nth-child(4),&:nth-child(6) {
+         padding-top: 0;
+      }
+   }
+
+   &__img {
+      width: 100%;
+      text-align: center;
+   }
+
+   &__text {
+      margin-top: 30px;
+      text-align: center;
+
+      & h5{
+         @extend %h5;
+         color: #fff;
+      }
+
+      & p {
+         @extend %p;
+         margin-top: 14px;
+         color: #fff;
+      }
+   }
+}
+

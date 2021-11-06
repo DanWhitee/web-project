@@ -1,0 +1,123 @@
+.watch-video {
+   padding-top: 190px;
+   background: linear-gradient(180deg, #314BD2 0%, #455FE5 10.43%, #455FE5 100%);
+
+   @media screen and (max-width: 729.9px) {
+      padding-top: 100px;
+   }
+
+   &__wrapper {
+      background: url('../../images/home-images/watch-video-images/watch-video-background-text.svg') no-repeat;
+      padding-bottom: 150px;
+
+      @media screen and (max-width: 729.9px) {
+         padding-bottom: 100px;
+
+      }
+   }
+
+   &__body {
+      padding-top: 60px;
+   }
+}
+
+.watch-video__body-text {
+   max-width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   transform: translateY(-100px);
+   top: 0;
+   left: 0;
+   z-index: 10;
+
+   & img {
+      width: 42px;
+      height: 42px;
+      margin-bottom: 20px;
+   }
+
+   & p {
+      @extend %h3;
+      text-align: justify;
+      color: #fff;
+      max-width: 374px;
+   }
+
+   @media screen and (max-width: 729.9px) {
+      justify-content: center;
+      margin-bottom: 50px;
+      transform: none
+   }
+}
+
+
+.video {
+   &__wrapper {
+      display: flex;
+      position: relative;
+      width: 100%;
+
+      @media screen and (max-width: 729.9px) {
+         &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            width: 200px;
+            height: 70px;
+
+
+            background-image: url('../../images/home-images/watch-video-images/watch-video-finger-top.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+
+         }
+      }
+   }
+
+   &__item {
+      width: 70%;
+      border-radius: 20px;
+      position: relative;
+
+      @media screen and (max-width: 729.9px) {
+         width: 100%;
+      }
+   } 
+
+   &__img {
+      position: absolute;
+      bottom: -113px;
+      right: 13px;
+      z-index: 2;
+      width: 51%;
+      pointer-events:unset;
+
+      @media screen and (max-width: 999.9px) {
+         bottom: -103px;
+      }
+      @media screen and (max-width: 919.9px) {
+         bottom: -99px;
+      }
+      @media screen and (max-width: 873.9px) {
+         bottom: -92px;
+      }
+      @media screen and (max-width: 847.9px) {
+         bottom: -88px;
+      }
+      @media screen and (max-width: 799.9px) {
+         bottom: -86px;
+      }
+      @media screen and (max-width: 759.9px) {
+         bottom: -84px;
+      }
+      @media screen and (max-width: 729.9px) {
+         // bottom: -79px;
+         display: none;
+      }
+
+   }
+}
+
